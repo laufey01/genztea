@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reCard"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/recImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+    <TextView
+        android:id="@+id/recName"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_toEndof="@id/recImage"
+        android:text="Name"
+        android:textColor="@color/gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/recPrice"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_toEndof="@id/recName"
+        android:text="Price"
+        android:background="@drawable/round"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/recDesc"
+        android:layout_width="155dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_toEndof="@id/recImage"
+        android:maxLines="0"
+        android:text="Description"
+        android:textColor="@color/gray"
+        android:textSize="8sp" />
+
+
+</androidx.cardview.widget.CardView>
